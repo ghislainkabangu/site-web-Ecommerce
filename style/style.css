@@ -1,8 +1,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    
-    /* background-color: rgb(3, 42, 80)*/
+
 }
 
 header {
@@ -11,9 +10,34 @@ header {
 }
 
 header img {
-    width: 80px;
+    width: 50px;
     padding: 10px;
 
+}
+
+nav ul {
+    text-align: right;
+    position: relative;
+    bottom: 40px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+    transition: 0.5s;
 }
 
 header h1,
@@ -22,30 +46,35 @@ p,
 h3 {
     text-align: center;
 }
-header h1{
-    color: rgb(3, 42, 80)
+
+header h1 {
+    color: gray;
 }
-header h2{
-    color: rgb(3, 42, 80);
+
+header h2 {
+    color: gainsboro;
 }
+
 header h3 {
     font-style: italic;
     color: red;
 }
-header p{
-    font-family: Arial, Helvetica, sans-serif;
+
+header p {
+    color: black
 }
-.galerie{
+
+.galerie {
     color: white;
     font-style: italic;
     color: red;
 }
 
 section {
-    
+
     flex-basis: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -55,36 +84,61 @@ article {
     flex-basis: 40%;
     box-sizing: content-box;
     margin-top: 50px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 2px 2px 2px gainsboro;
     padding: 20px;
-    background-color: white;
-    background-color: rgb(3, 42, 80);
+    background-color: rgb(234, 232, 232);
     color: white;
+    transition: 0.5s;
+}
+
+article p {
+    text-align: left;
 }
 
 article img {
     width: 130px;
     float: right;
     border-radius: 50%;
-
+    transition: 0.5s;
 }
 
-article h3{
+article h5 {
     text-align: left;
-}
-article a {
-    color: white;
-    background-color: red;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: large;
+    transition: 0.5s;
 }
 
-article a:hover {
-    font-weight: bold;
+article button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-transform: lowercase;
+    transition: 0.5s;
+}
+
+.article {
+    color: black;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.article h5 {
     color: red;
-    background-color: whitesmoke;
-    transition: 0.7s;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.article button {
+    border-radius: 3px;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.article img {
+    width: 150px;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px red;
 }
 
 .equipe {
@@ -97,8 +151,7 @@ article a:hover {
 }
 
 .listclient {
-    margin-top: 50px;
-    margin-bottom: 50px;
+
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -118,33 +171,16 @@ article a:hover {
 .fidelity {
     flex-basis: 100%;
     margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     padding: 10px;
-    color: rgb(3, 42, 80);
+    color: grey;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .fidelity h2 {
     letter-spacing: 2px;
-}
-
-.fidelity a {
-    text-decoration: none;
-    background-color: rgb(3, 42, 80);
-    color: white;
-    padding: 5px;
-    border-radius: 2px;
-}
-
-.fidelity a:hover {
-    transition: 0.7s;
-    border-radius: 5px;
-    background-color: white;
-    color: rgb(3, 42, 80);
-    font-weight: bold;
-    border: 1px solid rgb(3, 42, 80);
 }
 
 footer {
@@ -156,19 +192,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 footer div {
-   flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 footer img {
     width: 50px;
 }
-footer p{
+
+footer p {
     text-align: left;
 }
+
 footer a {
     text-decoration: none;
     color: white;
@@ -182,39 +220,72 @@ footer ul li {
     display: inline-block;
     padding: 10px;
 }
+
 footer .ContactUs {
     color: red;
     font-weight: bold;
 }
+
 @media screen and (max-width:950px) {
-   footer div {
-    flex-basis: 50%;
+    footer div {
+        flex-basis: 50%;
     }
+
     footer ul {
         padding-left: 0px;
     }
+
     footer ul li {
-       
+
         display: block;
-       padding: 0px;
+        padding: 0px;
     }
-    
-    
+
+
 }
-@media screen and (max-width:780px){
-    section article{
+
+@media screen and (max-width:780px) {
+    nav ul {
+        text-align: left;
+        position: relative;
+        bottom: 20px;
+        margin-right: 0px;
+        background-color: red;
+        padding: 0px;
+        padding-left: 10px;
+    }
+
+    nav ul li {
+        padding: 5px;
+        display: block;
+    }
+
+    nav ul li a {
+        color: white;
+
+    }
+
+    nav ul li a:hover {
+        color: gainsboro;
+        border-bottom: non;
+    }
+
+    section article {
         flex-basis: 80%;
     }
 }
-@media screen and (max-width:735px){
+
+@media screen and (max-width:735px) {
     footer div {
         flex-basis: 100%;
-        }
-        footer ul {
-            text-align: center;
-        }
-        footer ul li {
-            display: inline-block;
-           padding: 0px;
-        }
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer ul li {
+        display: inline-block;
+        padding: 0px;
+    }
 }
