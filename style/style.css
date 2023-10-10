@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 header {
@@ -121,6 +120,8 @@ article button {
     color: black;
     transition: 0.5s;
     background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gainsboro;
 }
 
 .article h5 {
@@ -138,7 +139,7 @@ article button {
 .article img {
     width: 150px;
     transition: 0.5s;
-    box-shadow: 3px 3px 3px red;
+    box-shadow: 3px 3px 3px grey;
 }
 
 .equipe {

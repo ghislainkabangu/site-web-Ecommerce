@@ -8,6 +8,7 @@ for (let i = 0; i < article.length; i++) {
     article[i].classList.add("article");
      
     article[i].title="Article Vente"
+    
   });
 
   article[i].addEventListener("mouseout", () => {

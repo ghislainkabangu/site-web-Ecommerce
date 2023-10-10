@@ -18,9 +18,11 @@ header h2 {
 header p {
     color: gray;
 }
-b{
+
+b {
     color: rgb(3, 42, 80);
 }
+
 .image {
     float: left;
     width: 50px;
@@ -44,7 +46,7 @@ section div {
     /*border: 1px solid gainsboro;*/
     padding: 5px;
     box-shadow: 8px 8px 5px gainsboro;
-    
+
 }
 
 form .icon,
@@ -82,6 +84,10 @@ form select {
     border: none;
 }
 
+form select option {
+    font-weight: bold;
+}
+
 .paragraphechoix {
     font-style: oblique;
     color: gray;
@@ -90,14 +96,16 @@ form select {
 
 }
 
-textarea{
+textarea {
     width: 90%;
     border: 2px solid gainsboro;
 }
-textarea::-webkit-input-placeholder{
+
+textarea::-webkit-input-placeholder {
     color: gray;
     opacity: 0.3;
 }
+
 form button {
     width: 45%;
     height: 50px;
@@ -181,7 +189,7 @@ footer .ContactUs {
 }
 
 @media screen and (max-width:600px) {
-       
+
     section div {
         flex-basis: 90%;
         box-shadow: 3px 3px 2px gainsboro;
@@ -195,10 +203,12 @@ footer .ContactUs {
         width: 95%;
         margin-top: 5px;
     }
+
     form select {
         width: 95%;
     }
-    textarea{
+
+    textarea {
         width: 95%;
     }
 
