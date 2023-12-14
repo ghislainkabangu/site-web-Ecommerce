@@ -1,77 +1,113 @@
 body {
+    background-color: white;
+    margin: auto;
+    padding: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 header {
     flex-basis: 100%;
+    margin: auto;
+    padding: auto;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+/***************************************GESTION DU MENU******************************************* */
+#mysidenav {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: -40%;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    background-color: rgba(206, 206, 206, 0.5);
+    word-wrap: break-word;
+}
+
+#mysidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.5s;
+    color: white;
+}
+
+#mysidenav a:hover {
+    background-color: rgba(255, 251, 251, 0.5);
+
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+#mysidenav ul {
+    list-style-type: none;
+    padding: 0px;
     margin: 0px;
 }
 
-header img {
-    width: 50px;
-    padding: 10px;
-
+#mysidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
 
-nav ul {
-    text-align: right;
+#mysidenav .close:hover {
+    font-size: 40px;
+    color: white;
+}
+
+#openBtn {
     position: relative;
-    bottom: 40px;
+    top: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 50px;
-}
+/********************************LE GRAND TITRE***********************************/
 
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: gray;
-    text-transform: uppercase;
-}
-
-nav ul li a:hover {
-    color: red;
-    border-bottom: 2px solid red;
+.first_letters {
+    font-size: 120%;
     transition: 0.5s;
 }
 
 header h1,
 h2,
-p,
 h3 {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header h1 {
-    color: gray;
+    color: white;
+
+    font-style: oblique;
+    text-shadow: 2px 3px 3px gray;
+
 }
 
 header h2 {
-    color: gainsboro;
+    font-size: medium;
+    color: whitesmoke
 }
 
 header h3 {
     font-style: italic;
-    color: red;
-}
-
-header p {
-    color: black
-}
-
-.galerie {
     color: white;
-    font-style: italic;
-    color: red;
 }
 
+/*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
-
-    flex-basis: 100%;
+    margin: auto;
+    padding: auto;
+    flex-basis: 95%;
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
@@ -79,15 +115,16 @@ section {
     justify-content: space-around;
 }
 
+/************************************ARTICLE***********************************************/
 article {
     flex-basis: 40%;
     box-sizing: content-box;
     margin-top: 50px;
-    box-shadow: 2px 2px 2px gainsboro;
     padding: 20px;
-    background-color: rgb(234, 232, 232);
-    color: white;
     transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: gray;
 }
 
 article p {
@@ -95,7 +132,7 @@ article p {
 }
 
 article img {
-    width: 130px;
+    width: 100px;
     float: right;
     border-radius: 50%;
     transition: 0.5s;
@@ -114,14 +151,11 @@ article button {
     padding: 5px;
     text-transform: lowercase;
     transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .article {
-    color: black;
     transition: 0.5s;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px gainsboro;
 }
 
 .article h5 {
@@ -132,68 +166,126 @@ article button {
 
 .article button {
     border-radius: 3px;
-    background-color: grey;
+    background-color: rgb(255, 202, 9);
     transition: 0.5s;
 }
 
 .article img {
-    width: 150px;
+    width: 40%;
     transition: 0.5s;
-    box-shadow: 3px 3px 3px grey;
 }
 
+/**************************************TEMOIGNAGE DE CLIENT*****************************************/
 .equipe {
+    margin-top: 100px;
     flex-basis: 100%;
     text-align: center;
-    color: rgb(3, 42, 80);
     letter-spacing: 3px;
-    text-transform: uppercase;
     color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .listclient {
 
     flex-basis: 100%;
+    margin-bottom: 100px;
+    padding: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .listclient img {
     border-radius: 50%;
 }
 
-.listclient h4 {
-    font-family: Arial, Helvetica, sans-serif;
+/***********************************BARRE DE PROGRESSION***************************************/
+.statistique {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: auto;
+    width: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
 }
 
+.statistique h2 {
+    text-align: center;
+}
+
+.bar {
+    width: 100%;
+    padding: 5px;
+    border-radius: 30px;
+    color: gray;
+    background-color: gray;
+}
+
+.progressionbar {
+    text-align: right;
+    padding: 2px;
+    border-radius: 30px;
+    background-color: white;
+    transition: 0.5s;
+    font-size: medium;
+}
+
+.progressbarInjs {
+    color: red;
+    font-size: large;
+    padding: 7px;
+    font-weight: bold;
+    zoom: 100%;
+    transition: 0.5s;
+}
+
+.confiance {
+    width: 90%;
+}
+
+.securité {
+    width: 80%;
+}
+
+.titre_securite {
+    color: red;
+}
+
+.rapidité {
+    width: 70%;
+}
+
+/*****************************************FIDELITE**********************************************/
 .fidelity {
     flex-basis: 100%;
     margin: 0px;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: auto;
     text-align: center;
     padding: 10px;
     color: grey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .fidelity h2 {
     letter-spacing: 2px;
 }
 
+/*********************************************FOOTER*************************************************/
 footer {
-    margin: 0px;
-    background-color: rgb(3, 42, 80);
+    margin: auto;
     color: white;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    background-color: gray;
 }
 
 footer div {
@@ -245,37 +337,6 @@ footer .ContactUs {
 
 }
 
-@media screen and (max-width:780px) {
-    nav ul {
-        text-align: left;
-        position: relative;
-        bottom: 20px;
-        margin-right: 0px;
-        background-color: red;
-        padding: 0px;
-        padding-left: 10px;
-    }
-
-    nav ul li {
-        padding: 5px;
-        display: block;
-    }
-
-    nav ul li a {
-        color: white;
-
-    }
-
-    nav ul li a:hover {
-        color: gainsboro;
-        border-bottom: non;
-    }
-
-    section article {
-        flex-basis: 80%;
-    }
-}
-
 @media screen and (max-width:735px) {
     footer div {
         flex-basis: 100%;
@@ -288,5 +349,30 @@ footer .ContactUs {
     footer ul li {
         display: inline-block;
         padding: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    #mysidenav a {
+        text-transform: lowercase;
+    }
+
+    header h1 {
+        font-size: large;
+    }
+
+    header h2,
+    h3 {
+        font-size: medium;
+    }
+
+    section article {
+        flex-basis: 80%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gainsboro;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
     }
 }

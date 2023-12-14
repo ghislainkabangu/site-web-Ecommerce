@@ -8,36 +8,25 @@
     <title>notre_formuaire_d'achat_en_ligne</title>
     <link rel="icon" href="album/favicon-32x32.png">
     <link rel="stylesheet" href="style/style-formulaire.css">
+
 </head>
 
 <body>
     <header>
-        <img class="image" src="album/panier.jpg" alt="">
-        <h1>Nous Vous Souhaitons La Bienvenue sur Notre Espace d'Achat</h1>
-        <h2> Votre fidélité reste recompensée !</h2>
-        <p> Pour vous remercier , nous avons
-            le plaisir de vous inviter à cette offre privée avec des promotions allant jusqu'à 30% de reductions .
-            <br> La promotion est valable jusqu'à épuisement des stocks. A cela s'ajoute notre bonus <b> "un acheté , le
-                deuxième est offert"</b>. <br>Nous avons le plaisir de vous compter parmi nos clients dès maintenant.
-        </p>
+
+        <h1> Espace achat</h1>
+        <h2>Chez nous votre fidélité reste recompensée !</h2>
+
     </header>
     <section>
         <div>
-            <form id="formulaire" method="POST" action="">
-                <p class="icon"><svg width="44" height="40" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="#9EABB2" fill-rule="nonzero">
-                            <path
-                                d="M11.07 0C8.353 0 6.14 2.192 6.14 4.876l-.179 25.278 2.69.02.179-25.289c0-1.21 1.005-2.196 2.24-2.196h27.027V0H11.071z" />
-                            <path
-                                d="M38.097 0a5.115 5.115 0 00-5.11 5.11v28.37c0 2.052-1.668 3.72-3.72 3.72a3.725 3.725 0 01-3.72-3.72V30.21c0-.743-.601-1.345-1.344-1.345H1.345C.602 28.864 0 29.466 0 30.21v3.272a6.417 6.417 0 006.41 6.409V37.2a3.724 3.724 0 01-3.72-3.72v-1.927h20.168v1.928a6.417 6.417 0 006.41 6.409 6.417 6.417 0 006.409-6.41V12.46h6.185c.743 0 1.345-.602 1.345-1.345V5.11A5.115 5.115 0 0038.097 0zm2.42 9.77h-4.84V5.11a2.423 2.423 0 012.42-2.42 2.423 2.423 0 012.42 2.42v4.66z" />
-                            <path
-                                d="M6.14 37.201h22.813v2.689H6.14zM19.99 7.485h-6.947a1.345 1.345 0 100 2.69h6.947a1.345 1.345 0 100-2.69zM28.057 12.863H13.043a1.345 1.345 0 100 2.69h15.014a1.345 1.345 0 100-2.69zM28.057 18.242H13.043a1.345 1.345 0 100 2.69h15.014a1.344 1.344 0 100-2.69zM28.057 23.62H13.043a1.345 1.345 0 100 2.69h15.014a1.345 1.345 0 100-2.69z" />
-                        </g>
-                    </svg></p>
+            <form id="formulaire" name="formulaire" method="POST" enctype="multipart/form-data">
+
                 <p> <input type="text" id="nom" name="nom" placeholder="Votre Nom" required> <input type="text"
                         id="postnom" name="postnom" placeholder="Votre Postnom" required></p>
-                <p><input type="text" id="prenom" name="prenom" placeholder="Votre Prenom"> <input type="tel" id="tel"
-                        name="tel" placeholder="Votre Numéro de Téléphone" required></p>
+                <p><input type="text" id="prenom" name="prenom" placeholder="Votre Prenom" required> <input type="tel"
+                        id="tel" name="tel" placeholder="Votre Numéro de Téléphone avec indication Ex:+243" required>
+                </p>
 
                 <p class="paragraphechoix">Indiquez votre commune ici: </p>
                 <p><select name="commune" id="commune">
@@ -67,12 +56,12 @@
 
                     </select></p>
 
-                <p><input type="email" required placeholder="Kabangughislain77@gmail.cd" id="mail" name="mail">
+                <p><input type="email" required placeholder="Courier Electronique@" id="courier" name="courier">
                     <input type="text" name="quartier" id="quartier" placeholder="Votre Quartier" required>
                 </p>
 
                 <p><input type="text" name="rue" required id="rue" placeholder="Avenue(rue) Et NUméro"> <input
-                        type="number" name="nombre" id="nombre" placeholder="Nombre D'Article"></p>
+                        type="number" name="nombreArt" id="nombreArt" placeholder="Nombre D'Article"></p>
 
                 <p class="paragraphechoix">Faîtes le choix de votre article ici:</p>
                 <p><select name="article" id="article">
@@ -90,10 +79,10 @@
 
                     </select> </p>
 
-                <p><textarea name="message" id="message"
-                        placeholder="Pour vos messages, segessions, commentaires et autres faîtes les ici"
+                <p><textarea name="message" id="message" required
+                        placeholder="Pour vos messages, sugessions, commentaires et autres faîtes les ici"
                         rows="5"></textarea></p>
-                <p><button type="submit"> Envoyer</button> <button type="reset">annuler</button>
+                <p><button type="submit" name="soumission"> Envoyer</button> <button type="reset">Annuler</button>
                 </p>
             </form>
         </div>
@@ -105,12 +94,14 @@
                     <path
                         d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
                         fill="#FFF" fill-rule="evenodd" />
-                </svg> Téléphone : <a href="#" title="+243 828 588 141 ">+243 828 588 141 </a> </p>
+                </svg> Téléphone : <a href="tel:+243828588141" title="Num tel : +243 828 588 141 "
+                    title="+243 828 588 141 ">+243 828 588 141 </a> </p>
             <p><svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
                         fill="#FFF" fill-rule="evenodd" />
-                </svg> Messagerie : <a href="#" title="kabangughislain77@gmail.com">kabangughislain77@gmail.com</a></p>
+                </svg> Messagerie : <a href="mailto:kabangughislain77@gmail.com"
+                    title="kabangughislain77@gmail.com">kabangughislain77@gmail.com</a></p>
         </div>
         <div>
             <p> <a href="#" title="About Us">About Us</a></p>
@@ -122,6 +113,7 @@
             <p class="ContactUs">Contact Us</p>
             <p>Privacy</p>
             <P>Team</P>
+            <p style="font-size: small;">Ghislain Kabangu Copyright © 2023</p>
         </div>
         <div>
             <ul>

@@ -1,37 +1,36 @@
 body {
     background-color: white;
+    margin: auto;
 }
 
 header {
-    text-align: center;
     padding: 10px;
 }
 
-header {
-    color: rgb(3, 42, 80);
+header h1 {
+    text-align: center;
+    color: gray;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header h2 {
+    text-align: center;
+    font-size: medium;
+    text-transform: lowercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
     color: red;
 }
 
-header p {
-    color: gray;
-}
-
-b {
-    color: rgb(3, 42, 80);
-}
-
 .image {
-    float: left;
     width: 50px;
     border-radius: 50%;
 }
 
 section {
     margin: auto;
-    margin-top: 100;
+    margin-top: 50px;
     margin-bottom: 100px;
     width: 100%;
     background-color: white;
@@ -43,14 +42,12 @@ section {
 
 section div {
     flex-basis: 80%;
-    /*border: 1px solid gainsboro;*/
     padding: 5px;
-    box-shadow: 8px 8px 5px gainsboro;
+    box-shadow: 5px 5px 5px gainsboro;
 
 }
 
-form .icon,
-p {
+form p {
     text-align: center;
 }
 
@@ -61,20 +58,23 @@ form input[type=text],
     margin: auto;
     width: 45%;
     height: 30px;
-    border: 2px solid gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
 }
 
 form input::-webkit-input-placeholder {
     color: gray;
-    opacity: 0.3;
+    opacity: 0.2;
     padding-left: 10px;
     font-style: oblique;
 }
 
 form input:focus {
     outline: none;
-    border: 0.5px solid red;
+    border: 1px solid red;
+    transition: 0.5s;
 }
 
 form select {
@@ -85,7 +85,7 @@ form select {
 }
 
 form select option {
-    font-weight: bold;
+    font-style: oblique;
 }
 
 .paragraphechoix {
@@ -99,23 +99,39 @@ form select option {
 textarea {
     width: 90%;
     border: 2px solid gainsboro;
+    border-radius: 4px;
+    color: gray;
 }
 
 textarea::-webkit-input-placeholder {
     color: gray;
-    opacity: 0.3;
+    opacity: 0.2;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid red;
+    transition: 0.5s;
 }
 
 form button {
     width: 45%;
     height: 50px;
     border: none;
+
 }
 
-
+form button:hover {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: rgba(206, 206, 206, 0.5);
+}
 
 footer {
-    background-color: rgb(3, 42, 80);
+    margin: auto;
+    background-color: gray;
     color: white;
     padding: 20px;
     flex-basis: 100%;
