@@ -176,7 +176,7 @@ article button {
 }
 
 /**************************************TEMOIGNAGE DE CLIENT*****************************************/
-.equipe {
+.titre_diaporama {
     margin-top: 100px;
     flex-basis: 100%;
     text-align: center;
@@ -185,21 +185,53 @@ article button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.listclient {
-
+.master {
+    margin: auto;
+    padding: 20px;
     flex-basis: 100%;
-    margin-bottom: 100px;
-    padding: auto;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-    color: gray;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-.listclient img {
+.master div {
+    flex-basis: 80%;
+    padding: 20px;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.master div img {
+
     border-radius: 50%;
+}
+
+.master div p {
+    font-style: oblique;
+}
+
+.masterChild {
+    display: none;
+
+}
+
+.un {
+    display: block;
+}
+
+.masterChildDisplayBlock {
+    display: block;
+
+}
+
+.displayNone {
+    display: none;
+}
+
+.radio {
+    flex-basis: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 /***********************************BARRE DE PROGRESSION***************************************/

@@ -30,6 +30,33 @@ for (let i = 0; i < article.length; i++) {
   });
 }
 
+/****************************************diaporama contenat les témoignages des clients********************/
+
+let masterChild = document.querySelectorAll(".masterChild");
+let blockUn = document.querySelector(".un");
+
+let input = document.querySelectorAll("input");
+input[0].addEventListener("click", () => {
+  masterChild[0].classList.add("masterChildDisplayBlock");
+  masterChild[1].classList.remove("masterChildDisplayBlock");
+  masterChild[2].classList.remove("masterChildDisplayBlock");
+  blockUn.classList.remove("displayNone");
+});
+
+input[1].addEventListener("click", () => {
+  masterChild[0].classList.remove("masterChildDisplayBlock");
+  masterChild[1].classList.add("masterChildDisplayBlock");
+  masterChild[2].classList.remove("masterChildDisplayBlock");
+  blockUn.classList.add("displayNone");
+});
+
+input[2].addEventListener("click", () => {
+  masterChild[0].classList.remove("masterChildDisplayBlock");
+  masterChild[1].classList.remove("masterChildDisplayBlock");
+  masterChild[2].classList.add("masterChildDisplayBlock");
+  blockUn.classList.add("displayNone");
+});
+
 // BARRE DE PROGRESSION
 
 let progressbar = document.querySelectorAll(".progressionbar");
