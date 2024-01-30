@@ -19,7 +19,7 @@ header h2 {
     font-size: medium;
     text-transform: lowercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     color: red;
 }
 
@@ -31,24 +31,27 @@ header h2 {
 section {
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     width: 100%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section div {
     flex-basis: 80%;
-    padding: 5px;
-    box-shadow: 5px 5px 5px gainsboro;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
 
 }
 
-form p {
+form {
     text-align: center;
+    padding: 20px;
+    background-color: wheat;
 }
 
 form input[type=text],
@@ -58,23 +61,28 @@ form input[type=text],
     margin: auto;
     width: 45%;
     height: 30px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
+    border: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: gray;
+    color: red;
+    background: white;
+    padding: 5px;
+    transition: ease 0.5s;
 }
 
 form input::-webkit-input-placeholder {
     color: gray;
-    opacity: 0.2;
-    padding-left: 10px;
-    font-style: oblique;
+    font-weight: normal;
+    opacity: 0.3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form input:focus {
     outline: none;
+    background-color: white;
     border: 1px solid red;
-    transition: 0.5s;
+    font-weight: normal;
+    color: red;
+    transition: ease 0.5s;
 }
 
 form select {
@@ -84,33 +92,24 @@ form select {
     border: none;
 }
 
-form select option {
-    font-style: oblique;
+form select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .paragraphechoix {
-    font-style: oblique;
-    color: gray;
+    color: white;
     font-weight: normal;
-    opacity: 0.3;
-
 }
 
 textarea {
-    width: 90%;
-    border: 2px solid gainsboro;
-    border-radius: 4px;
-    color: gray;
-}
-
-textarea::-webkit-input-placeholder {
-    color: gray;
-    opacity: 0.2;
+    width: 91%;
+    border: none;
+    color: red;
+    padding: 7px;
 }
 
 textarea:focus {
     outline: none;
-    border: 2px solid red;
     transition: 0.5s;
 }
 
@@ -118,35 +117,35 @@ form button {
     width: 45%;
     height: 50px;
     border: none;
-
+    background-color: white;
+    color: gray;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 form button:hover {
-    color: white;
-    font-weight: bold;
+    letter-spacing: 0px;
+    border: 1px solid red;
     transition: 0.5s;
-    border-radius: 5px;
-    background-color: rgba(206, 206, 206, 0.5);
 }
 
 footer {
     margin: auto;
-    background-color: gray;
-    color: white;
+    margin-top: 100px;
+    background-color: gainsboro;
+    color: gray;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 footer div {
     flex-basis: 20%;
-}
-
-footer img {
-    width: 50px;
 }
 
 footer p {
@@ -155,7 +154,7 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: gray;
 }
 
 footer a:hover {

@@ -4,46 +4,45 @@ body {
     padding: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 header {
     flex-basis: 100%;
     margin: auto;
-    padding: auto;
-    transition: 0.5s;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: red;
-    box-shadow: 5px 5px 5px gainsboro;
+    box-shadow: 2px 1px 2px gray;
+    height: 30px;
 }
 
 /***************************************GESTION DU MENU******************************************* */
 #mysidenav {
-    height: 100%;
-    width: 40%;
+    height: 45%;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0px;
-    left: -40%;
+    left: -100%;
     padding-top: 60px;
-    transition: left 0.5s ease;
-    background-color: rgba(206, 206, 206, 0.5);
+    transition: ease-in-out 0.5s;
+    background-color: rgb(135, 133, 133, 0.5);
     word-wrap: break-word;
 }
 
 #mysidenav a {
     padding: 8px 8px 8px 10px;
     text-decoration: none;
-    font-size: 25px;
     display: block;
     transition: 0.5s;
     color: white;
 }
 
 #mysidenav a:hover {
-    background-color: rgba(255, 251, 251, 0.5);
-
+    letter-spacing: 5px;
+    color: red;
     transition: 0.5s;
-    font-size: 30px;
 }
 
 #mysidenav ul {
@@ -53,10 +52,15 @@ header {
 }
 
 #mysidenav .close {
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
+}
+
+.fermer {
+    font-size: small;
 }
 
 #mysidenav .close:hover {
@@ -65,51 +69,78 @@ header {
 }
 
 #openBtn {
-    position: relative;
-    top: 5px;
-    padding: 10px;
-    padding-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
 }
 
 /********************************LE GRAND TITRE***********************************/
-
-.first_letters {
-    font-size: 120%;
-    transition: 0.5s;
-}
-
-header h1,
-h2,
-h3 {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header h1 {
-    color: white;
-
-    font-style: oblique;
-    text-shadow: 2px 3px 3px gray;
-
-}
-
-header h2 {
-    font-size: medium;
-    color: whitesmoke
-}
-
 header h3 {
-    font-style: italic;
     color: white;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    bottom: 35px;
+}
+
+/*************************banière_text_accueil******************************************/
+.banière_text_accueil {
+    flex-basis: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.banière_text_accueil h1 {
+    font-size: 35px;
+}
+
+/***************************************bloc arrivag********************************/
+.bloc_arrivage {
+    flex-basis: 95%;
+}
+
+.bloc_arrivage_contente {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.bloc_arrivage_contente div {
+    flex-basis: 20%;
+    text-align: center;
+    box-sizing: content-box;
+    background-color: red;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 5px 1px rgba(121, 119, 119, 0.5);
+    transition: ease-in-out 0.5s;
+}
+
+.bloc_arrivage_contente div:hover {
+    position: relative;
+    bottom: 5px;
+    box-shadow: 3px 5px 1px gray;
+    transition: ease-in-out 0.5s;
+}
+
+.bloc_arrivage_contente div img {
+    width: 100%;
+}
+
+.bloc_arrivage p {
+    font-size: small;
 }
 
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
     padding: auto;
-    flex-basis: 95%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    flex-basis: 100%;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -117,13 +148,14 @@ section {
 
 /************************************ARTICLE***********************************************/
 article {
-    flex-basis: 40%;
+    flex-basis: 25%;
     box-sizing: content-box;
     margin-top: 50px;
     padding: 20px;
     transition: 0.5s;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
+    cursor: pointer;
     color: gray;
 }
 
@@ -144,16 +176,6 @@ article h5 {
     transition: 0.5s;
 }
 
-article button {
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 5px;
-    text-transform: lowercase;
-    transition: 0.5s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .article {
     transition: 0.5s;
 }
@@ -164,24 +186,18 @@ article button {
     transition: 0.5s;
 }
 
-.article button {
-    border-radius: 3px;
-    background-color: rgb(255, 202, 9);
-    transition: 0.5s;
-}
-
 .article img {
-    width: 40%;
-    transition: 0.5s;
+    width: 180px;
+    transition: ease-in-out 0.5s;
 }
 
 /**************************************TEMOIGNAGE DE CLIENT*****************************************/
 .titre_diaporama {
-    margin-top: 100px;
+    margin-top: 50px;
     flex-basis: 100%;
     text-align: center;
-    letter-spacing: 3px;
     color: gray;
+    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -192,6 +208,7 @@ article button {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+
 }
 
 .master div {
@@ -232,100 +249,48 @@ article button {
     flex-basis: 100%;
     margin: auto;
     text-align: center;
+
 }
 
-/***********************************BARRE DE PROGRESSION***************************************/
-.statistique {
-    margin: auto;
+/***********************************fidelité  et offre***************************************/
+.fidelite {
     margin-top: 100px;
-    margin-bottom: 100px;
-    padding: auto;
-    width: 80%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-}
-
-.statistique h2 {
-    text-align: center;
-}
-
-.bar {
-    width: 100%;
-    padding: 5px;
-    border-radius: 30px;
-    color: gray;
-    background-color: gray;
-}
-
-.progressionbar {
-    text-align: right;
-    padding: 2px;
-    border-radius: 30px;
-    background-color: white;
-    transition: 0.5s;
-    font-size: medium;
-}
-
-.progressbarInjs {
-    color: red;
-    font-size: large;
-    padding: 7px;
-    font-weight: bold;
-    zoom: 100%;
-    transition: 0.5s;
-}
-
-.confiance {
-    width: 90%;
-}
-
-.securité {
-    width: 80%;
-}
-
-.titre_securite {
-    color: red;
-}
-
-.rapidité {
-    width: 70%;
-}
-
-/*****************************************FIDELITE**********************************************/
-.fidelity {
     flex-basis: 100%;
-    margin: 0px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: auto;
-    text-align: center;
-    padding: 10px;
-    color: grey;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.fidelity h2 {
-    letter-spacing: 2px;
+.fidelite div {
+    flex-basis: 20%;
+    text-align: center;
+    box-sizing: content-box;
+    box-shadow: 3px 5px 1px rgba(121, 119, 119, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    transition: ease-in-out 0.5s;
+}
+
+.fidelite div img {
+    width: 100%;
 }
 
 /*********************************************FOOTER*************************************************/
 footer {
     margin: auto;
-    color: white;
+    margin-top: 200px;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: gray;
+    background-color: gainsboro;
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer div {
     flex-basis: 20%;
-}
-
-footer img {
-    width: 50px;
 }
 
 footer p {
@@ -334,7 +299,7 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: gray;
 }
 
 footer a:hover {
@@ -370,6 +335,10 @@ footer .ContactUs {
 }
 
 @media screen and (max-width:735px) {
+    footer {
+        margin-top: 100px;
+    }
+
     footer div {
         flex-basis: 100%;
     }
@@ -390,21 +359,34 @@ footer .ContactUs {
         text-transform: lowercase;
     }
 
-    header h1 {
-        font-size: large;
+    .bloc_arrivage_contente {
+        margin-top: 0px;
     }
 
-    header h2,
-    h3 {
-        font-size: medium;
+    .bloc_arrivage_contente div {
+        flex-basis: 40%;
+        margin-top: 15px;
+    }
+
+    .bloc_arrivage_div {
+        display: none;
+    }
+
+    .bloc_arrivage_contente div:hover {
+        position: relative;
+        bottom: 0px;
+        box-shadow: 3px 5px 1px gray;
     }
 
     section article {
-        flex-basis: 80%;
+        flex-basis: 75%;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px gainsboro;
-        margin-top: 30px;
-        margin-bottom: 50px;
-
+        margin-top: 20px;
     }
+
+    .fidelite div {
+        flex-basis: 40%;
+        margin: 20px;
+    }
+
 }

@@ -9,7 +9,7 @@ openBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-  sidenav.style = "left: -40%";
+  sidenav.style = "left: -100%";
 });
 
 //CODE DE GESTION DES INTERACTIONS DES ARTICLES
@@ -56,16 +56,3 @@ input[2].addEventListener("click", () => {
   masterChild[2].classList.add("masterChildDisplayBlock");
   blockUn.classList.add("displayNone");
 });
-
-// BARRE DE PROGRESSION
-
-let progressbar = document.querySelectorAll(".progressionbar");
-for (let x = 0; x < progressbar.length; x++) {
-  progressbar[x].addEventListener("mouseover", () => {
-    progressbar[x].classList.add("progressbarInjs");
-  });
-
-  progressbar[x].addEventListener("mouseout", () => {
-    progressbar[x].classList.remove("progressbarInjs");
-  });
-}
