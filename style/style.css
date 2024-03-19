@@ -204,22 +204,7 @@ header h3 {
     flex-basis: 95%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.swiper-button-prev{
-background-color: gainsboro;
-padding: 5px;
-border-radius: 5px;
-}
-.swiper-button-prev:hover{
-    background-color: gray;
-}
-.swiper-button-next{
-    background-color: gainsboro;
-    padding: 5px;
-    border-radius: 5px;
-}
-.swiper-button-next:hover{
-    background-color: gray;
-}
+
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
@@ -288,7 +273,7 @@ section div a:hover {
 /*********************************************FOOTER*************************************************/
 footer {
     margin: auto;
-    margin-top: 150px;
+    margin-top: 180px;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
