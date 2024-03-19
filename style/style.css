@@ -4,6 +4,7 @@ body {
     padding: auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -11,23 +12,23 @@ header {
     flex-basis: 100%;
     margin: auto;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: red;
-    box-shadow: 2px 1px 2px gray;
-    height: 30px;
+    height: 25px;
 }
 
 /***************************************GESTION DU MENU******************************************* */
 #mysidenav {
-    height: 45%;
-    width: 100%;
+    height: 100%;
+    width: 300px;
     position: fixed;
     z-index: 1;
     top: 0px;
-    left: -100%;
+    left: -300px;
     padding-top: 60px;
     transition: ease-in-out 0.5s;
     background-color: rgb(135, 133, 133, 0.5);
+    background-color: black;
     word-wrap: break-word;
 }
 
@@ -37,11 +38,12 @@ header {
     display: block;
     transition: 0.5s;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 #mysidenav a:hover {
-    letter-spacing: 5px;
-    color: red;
+    letter-spacing: 3px;
     transition: 0.5s;
 }
 
@@ -50,7 +52,9 @@ header {
     padding: 0px;
     margin: 0px;
 }
-
+#mysidenav ul li{
+    padding-top: 15px;
+}
 #mysidenav .close {
     cursor: pointer;
     position: absolute;
@@ -84,208 +88,210 @@ header h3 {
 
 /*************************banière_text_accueil******************************************/
 .banière_text_accueil {
-    flex-basis: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-    text-align: center;
+    flex-basis: 95%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
-.banière_text_accueil h1 {
-    font-size: 35px;
-}
-
-/***************************************bloc arrivag********************************/
-.bloc_arrivage {
+/***************************************fond accueil********************************/
+.fond_accueil {
     flex-basis: 95%;
-}
-
-.bloc_arrivage_contente {
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.bloc_arrivage_contente div {
-    flex-basis: 20%;
-    text-align: center;
+    height: 450px;
     box-sizing: content-box;
-    background-color: red;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: url("../album/freestocks-_3Q3tsJ01nc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.fond_accueil h2 {
+    padding-top: 80px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: 3px 5px 1px rgba(121, 119, 119, 0.5);
-    transition: ease-in-out 0.5s;
 }
 
-.bloc_arrivage_contente div:hover {
+.fond_accueil p {
+    color: white;
+}
+
+.fond_accueil ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.fond_accueil ul li a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+    color: inherit;
+    border-radius: 15px;
+}
+
+.fond_accueil ul li a:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 0.5s;
+}
+
+.explore {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.about {
+    color: white;
+    transition: 0.5s;
+}
+
+/*******************************************************************************************/
+.store {
+    flex-basis: 95%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.store ul {
     position: relative;
-    bottom: 5px;
-    box-shadow: 3px 5px 1px gray;
-    transition: ease-in-out 0.5s;
+    right: 55px;
 }
 
-.bloc_arrivage_contente div img {
-    width: 100%;
+.store ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 15px;
 }
 
-.bloc_arrivage p {
-    font-size: small;
+.store ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.store ul li a:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/*******************************arrivage*****************************************/
+.arrivage {
+    flex-basis: 95%;
+    margin-top: 20px;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+  
+}
+.arrivage img{
+    width: 200px; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.swiper {
+    width: 50%;
+    height: 220px;
+    color: gray;
+  }
+  .swiper-slide{
+    text-align: center;
+  }
+/*****************************************collection********************************/
+.collection {
+    flex-basis: 95%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
     padding: auto;
-    flex-basis: 100%;
-    margin-top: 50px;
+    flex-basis: 95%;
+    padding: 0px;
+    position: relative;
+    bottom: 40px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
-/************************************ARTICLE***********************************************/
-article {
-    flex-basis: 25%;
-    box-sizing: content-box;
-    margin-top: 50px;
-    padding: 20px;
-    transition: 0.5s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
-    cursor: pointer;
-    color: gray;
-}
-
-article p {
-    text-align: left;
-}
-
-article img {
-    width: 100px;
-    float: right;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-article h5 {
-    text-align: left;
-    font-size: large;
-    transition: 0.5s;
-}
-
-.article {
-    transition: 0.5s;
-}
-
-.article h5 {
-    color: red;
-    font-size: xx-large;
-    transition: 0.5s;
-}
-
-.article img {
-    width: 180px;
-    transition: ease-in-out 0.5s;
-}
-
-/**************************************TEMOIGNAGE DE CLIENT*****************************************/
-.titre_diaporama {
-    margin-top: 50px;
-    flex-basis: 100%;
-    text-align: center;
-    color: gray;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.master {
-    margin: auto;
-    padding: 20px;
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-}
-
-.master div {
-    flex-basis: 80%;
-    padding: 20px;
-    box-sizing: content-box;
-    text-align: center;
-}
-
-.master div img {
-
-    border-radius: 50%;
-}
-
-.master div p {
-    font-style: oblique;
-}
-
-.masterChild {
-    display: none;
-
-}
-
-.un {
-    display: block;
-}
-
-.masterChildDisplayBlock {
-    display: block;
-
-}
-
-.displayNone {
-    display: none;
-}
-
-.radio {
-    flex-basis: 100%;
-    margin: auto;
-    text-align: center;
-
-}
-
-/***********************************fidelité  et offre***************************************/
-.fidelite {
-    margin-top: 100px;
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.fidelite div {
+section div {
     flex-basis: 20%;
-    text-align: center;
-    box-sizing: content-box;
-    box-shadow: 3px 5px 1px rgba(121, 119, 119, 0.5);
+    margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    color: gray;
-    transition: ease-in-out 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px gainsboro;
 }
 
-.fidelite div img {
-    width: 100%;
+section div img {
+    box-shadow: 0px 0px 10px gainsboro;
+    border-radius: 10px;
+    width: 170px
 }
+
+section div p {
+    text-align: justify;
+    color: gray;
+}
+
+.prixBarre {
+    text-decoration: line-through;
+    color: red;
+    padding-right: 10px;
+}
+
+.prix {
+    font-size: large;
+}
+
+section div a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: xx-small;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+section div a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+
 
 /*********************************************FOOTER*************************************************/
 footer {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: gainsboro;
-    color: gray;
+    background-color: black;
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -299,11 +305,7 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: gray;
-}
-
-footer a:hover {
-    font-weight: bold;
+    color: white;
 }
 
 footer ul li {
@@ -314,6 +316,13 @@ footer ul li {
 footer .ContactUs {
     color: red;
     font-weight: bold;
+}
+
+
+@media screen and (max-width:1150px) {
+    section div {
+        flex-basis: 30%;
+    }
 }
 
 @media screen and (max-width:950px) {
@@ -331,10 +340,16 @@ footer .ContactUs {
         padding: 0px;
     }
 
+}
 
+@media screen and (max-width:800px) {
+    section div {
+        flex-basis: 40%;
+    }
 }
 
 @media screen and (max-width:735px) {
+
     footer {
         margin-top: 100px;
     }
@@ -359,24 +374,6 @@ footer .ContactUs {
         text-transform: lowercase;
     }
 
-    .bloc_arrivage_contente {
-        margin-top: 0px;
-    }
-
-    .bloc_arrivage_contente div {
-        flex-basis: 40%;
-        margin-top: 15px;
-    }
-
-    .bloc_arrivage_div {
-        display: none;
-    }
-
-    .bloc_arrivage_contente div:hover {
-        position: relative;
-        bottom: 0px;
-        box-shadow: 3px 5px 1px gray;
-    }
 
     section article {
         flex-basis: 75%;
@@ -384,9 +381,10 @@ footer .ContactUs {
         margin-top: 20px;
     }
 
-    .fidelite div {
-        flex-basis: 40%;
-        margin: 20px;
-    }
+}
 
+@media screen and (max-width:500px) {
+    section div {
+        flex-basis: 80%;
+    }
 }

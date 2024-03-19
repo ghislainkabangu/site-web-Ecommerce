@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>site-e-commerce-Galleries-Lafayette</title>
     <link rel="icon" href="album/favicon-32x32.png">
     <link rel="stylesheet" href="style/style.css">
-    <title>site-e-commerce-Galleries-Lafayette</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#" title="A propos">A propos</a> </li>
                 <li><a href="#" title="Services">Services</a> </li>
-                <li><a href="#" title="Boutique">Boutique</a> </li>
+                <li><a href="#boutique" title="Boutique">Boutique</a> </li>
                 <li><a href="#statistique" title="Fidelité">Fidelité</a> </li>
                 <li><a href="#" title="Promotion">Promotion</a> </li>
                 <li><a href="#listclient" title="partenaria">partenaria</a> </li>
@@ -30,7 +30,7 @@
         </div>
         <a id="openBtn" title="Cliquez ici pour acceder au menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
-                <g fill="#D0D6F9" fill-rule="evenodd">
+                <g fill="white" fill-rule="evenodd">
                     <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
                 </g>
             </svg>
@@ -39,510 +39,200 @@
         <h3>Vente FLASH 80% de Reduction à l'achat</h3>
     </header>
     <div class="banière_text_accueil">
-        <h1> Bienvenu(e) sur la vitrine <span class="text_gallerie">Gallerie lafayette Molato©</span></h1>
+        <h2>Vêtement et accessoires</h2>
     </div>
-    <!--arrivage-->
-    <div class="bloc_arrivage">
-        <div class="bloc_arrivage_contente">
-            <div>
-                <img src="album/header_t-shirts2.jpg" alt="image">
-                <h4>Nouvelles arrivages</h4>
-                <p>Du 20 déc au 1 juin 2024</p>
-            </div>
-            <div>
-                <img src="album/image-pc-sms-393x261-p19-66701-7_210805144657.png" alt="image">
-                <h4>Nouvelles arrivages</h4>
-                <p>Du 20 déc au 1 juin 2024</p>
-            </div>
-            <div class="bloc_arrivage_div">
-                <img src="album/header_t-shirts2.jpg" alt="image">
-                <h4>Nouvelles arrivages</h4>
-                <p>Du 20 déc au 1 juin 2024</p>
+    <div class="fond_accueil">
+        <h2>HIGH QUALITY TECH VETEMENTS & ACCESSOIRES</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+        <ul>
+            <li><a href="#section" class="explore" title="Explore">Explore now</a></li>
+            <li><a href="#" class="about" title="About">About Us</a></li>
+        </ul>
+    </div>
+    <!------------------------------->
+    <div class="store">
+        <h3 id="boutique">Boutique</h3>
+        <ul>
+            <li><a href="#" class="tout" title="tout">Tout</a></li>
+            <li><a href="#" title="Gear">Gear</a></li>
+            <li><a href="#" title="Vêtement">Vêtement</a></li>
+            <li><a href="#" title="Accessoires">Accessoires</a></li>
+        </ul>
+    </div>
+    <!----------------arrivages----------------->
+    <div class="arrivage">
 
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="album/m128238-0069_modelpage_front_facing_landscape.png" alt="arrivage">
+                    <h4>Montre rolex</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="album/vetements-bebe-w.jpg" alt="arrivage">
+                    <h4>Vêtement bébé</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="album/preview-nike-air-force-1-high-classics-fb2049-001pic01.jpg" alt="arrivage">
+                    <h4>Basket aire-force</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="album/image-pc-sms-393x261-p19-66701-7_210805144657.png" alt="arrivage">
+                    <h4>Talon femme</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="album/hero-56.jpg" alt="arrivage">
+                    <h4>Singlets</h4>
+                </div>
             </div>
-            <div class="bloc_arrivage_div">
-                <img src="album/image-pc-sms-393x261-p19-66701-7_210805144657.png" alt="image">
-                <h4>Nouvelles arrivages</h4>
-                <p>Du 20 déc au 1 juin 2024</p>
+            <!-- If we need pagination -->
+            <!--  <div class="swiper-pagination"></div>-->
 
-            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
         </div>
-    </div>
 
+    </div>
+    <!----------------collection--------------------->
+    <div class="collection" id="section">
+        <h3>Collection</h3>
+    </div>
     <!--la section contenant différents articles-->
     <section>
-        <article>
-            <img src="album/sac-a-main-femme-cuir-pu-3.jpg" alt="img">
-            <h4>Des sacs à main pour femmes à seulement </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$25.00</h5>
-
-        </article>
-        <article>
-            <img src="album/m128238-0069_modelpage_front_facing_landscape.png" alt="img">
-            <h4> Des montres rolex pour hommes et femmes à partir de </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$35.00</h5>
-
-
-        </article>
-        <article>
-            <img src="album/preview-nike-air-force-1-high-classics-fb2049-001pic01.jpg" alt="img">
-            <h4>Baskets pour toutes les tailles et couleurs</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$35.00</h5>
-
-        </article>
-        <article>
-            <img src="album/paire-de-sacoches-moustache-mik-2-x-205l.jpg" alt="img">
-            <h4>Sac à dos scolaire plus(cadeau) oreillette à </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$20.00</h5>
-
-        </article>
-        <article>
-            <img src="album/chemise-homme-manche-longues-a-chevrons.jpg" alt="img">
-            <h4>Chemises hommes et femmes , toutes les tailles et les couleurs à </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$18.00</h5>
-
-        </article>
-        <article>
-            <img src="album/CHA345BL_1_1024x1024.jpg" alt="img">
-            <h4>Chaussures pour les hommes et toutesles couleurs à </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$50.00</h5>
-
-        </article>
-        <article id="article">
-            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.jpg" alt="img">
-            <h4>Costume hommes pour toutes les tailles et couleurs à partir de </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$80.00</h5>
-
-        </article>
-        <article>
-            <img src="album/adydp03056_dcshoes,f_bsnw_frt1.jpg" alt="img">
-            <h4>Des pantalons jeans pour toutes les tailles et tout âge cet à partir de</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5> $20.00</h5>
-
-        </article>
-        <article>
-            <img src="album/amz_303853_st_truered.jpg" alt="img">
-            <h4>T-shirt sport pour hommes et femmes à partir de</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$10.00</h5>
-
-        </article>
-        <article>
-            <img src="album/sous-vetements-homme.jpg" alt="img">
-            <h4>Sous-vetêment, pour toutes les couleurs</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$5.00</h5>
-
-
-        </article>
-        <article>
-            <img src="album/H5000e178c798435dabf6ad9cc94bdfd27.jpg" alt="img">
-            <h4>Complet survetêment pour adulte ( femmes ) à partir de</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$25.00</h5>
-
-        </article>
-        <article>
-            <img src="album/vetement-pour-bb-1.jpeg" alt="img">
-            <h4>Combinaison vetêment pour enfants allant de </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$15.00</h5>
-        </article>
-        <article>
-            <img src="album/sac-a-main-femme-cuir-pu-3.jpg" alt="img">
-            <h4>Des sacs à main pour femmes à seulement </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$25.00</h5>
-
-        </article>
-        <article>
-            <img src="album/m128238-0069_modelpage_front_facing_landscape.png" alt="img">
-            <h4> Des montres rolex pour hommes et femmes à partir de </h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$35.00</h5>
-
-
-        </article>
-        <article>
-            <img src="album/preview-nike-air-force-1-high-classics-fb2049-001pic01.jpg" alt="img">
-            <h4>Baskets pour toutes les tailles et couleurs</h4>
-            <p><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
-                        fill="#EF9546" fill-rule="nonzero" />
-                </svg></p>
-            <h5>$35.00</h5>
-
-        </article>
-
+        <div>
+            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.jpg"
+                alt="image veste">
+            <h3>Veste homme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$180.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/sac-a-main-femme-cuir-pu-3.jpg" alt="image">
+            <h3>Sac à main femme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$100.05</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/chemise-homme-manche-longues-a-chevrons.jpg" alt="image veste">
+            <h3>Chemise homme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$90.15</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/sous-vetements-homme.jpg" alt="image veste">
+            <h3>Sous-vêtement</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$20.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/adydp03056_dcshoes,f_bsnw_frt1.jpg" alt="image veste">
+            <h3>Pantalon jeans</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$120.08</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/paire-de-sacoches-moustache-mik-2-x-205l.jpg" alt="image veste">
+            <h3>Sac à dos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$200.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/500-semerdjian_baskets_1-mcg-hossegor.jpg" alt="image veste">
+            <h3>Basket</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$170.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/amz_303853_st_truered.jpg" alt="image veste">
+            <h3>T-shirt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$400.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/CHA345BL_1_1024x1024.jpg" alt="image veste">
+            <h3>Chaussure homme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$135.12</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/vetement-pour-bb-1.jpeg" alt="image">
+            <h3>Vêtement pou bébé</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$125.02</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/H5000e178c798435dabf6ad9cc94bdfd27.jpg" alt="image">
+            <h3>Vêtement femme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$110.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
+        <div>
+            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.jpg"
+                alt="image veste">
+            <h3>Sous-vêtement</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
+                dolor sit. Volutpat odio</p>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$180.10</span></h5>
+            <a href="#">Add To Card</a>
+        </div>
     </section>
-    <div class="titre_diaporama" id="listclient">
-        <h2><svg class="svg-icon"
-                style="width: 1rem; height: 1rem;vertical-align: middle;fill: currentColor;overflow: hidden;"
-                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                    fill="red" />
-            </svg> Comme la Satisfaction est Notre Priorité Voici Ce Que Disent nos Clients:</h2>
-    </div>
-    <!--bloc contenant les différents témoignage de nos clients // DIAPORAMA-->
-    <div class="master">
-        <div class="masterChild un">
-
-            <p><img src="album/image-emily.jpg" alt="nos cliens"></p>
-
-            <p>We put our trust in Suneyide and they<br>delived. making sure our needs waremet<br>
-                and deadines ware always hit</p>
-            <h4 class="nomClient">Emily R.</h4>
-            <h4>cliente Potentiele active</h4>
-        </div>
-        <div class="masterChild">
-            <p><img src="album/image-thomas.jpg" alt="nos cliens"></p>
-            <p>We put our trust in Suneyide and they<br>delived. making sure our needs waremet<br>
-                and deadines ware always hit</p>
-            <h4 class="nomClient">Thomas S.</h4>
-            <h4>client Potentiel actif</h4>
-        </div>
-        <div class="masterChild">
-            <p><img src="album/image-jennie.jpg" alt="nos cliens"></p>
-            <p>We put our trust in Suneyide and they<br>delived. making sure our needs waremet<br>
-                and deadines ware always hit</p>
-            <h4 class="nomClient">Jennie F.</h4>
-            <h4>client Potentiel active</h4>
-        </div>
-
-    </div>
-    <div class="radio">
-        <input type="radio" name="choix">
-        <input type="radio" name="choix">
-        <input type="radio" name="choix">
-    </div>
-    <!--bloc présentant le statistique-->
-    <div class="fidelite">
-        <div>
-            <img src="album/eleve.jpg" alt="image">
-            <p>La livraison se fait à 0.00$</p>
-        </div>
-        <div>
-            <img src="album/jj.jpg" alt="image">
-            <p>Paiement securisé, Moyen de paiement populaire</p>
-        </div>
-        <div>
-            <img src="album/eleve.jpg" alt="image">
-            <p>Livraison gratuite, produit 100% garantie</p>
-        </div>
-        <div>
-            <img src="album/jj.jpg" alt="image">
-            <p>Passez votre commande et profitez du Service après vente</p>
-        </div>
-    </div>
 
     <!--mon pied de page footer-->
     <footer id="footer">
+        <div>
+            <p class="ContactUs">Contact Us</p>
+            <p>Privacy</p>
+            <P>Team</P>
+            <p>Fidelité</p>
+        </div>
+
+        <div>
+            <p> <a href="#" title="About Us">About Us</a></p>
+            <p>Jobs</p>
+            <p>Blog</p>
+            <p>Boutique</p>
+        </div>
         <div>
             <p><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -554,21 +244,9 @@
                     <path
                         d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
                         fill="#FFF" fill-rule="evenodd" />
-                </svg> Messagerie : <a href="mailto:kabangughislain77@gmail.com"
+                </svg> Courier : <a href="mailto:kabangughislain77@gmail.com"
                     title="kabangughislain77@gmail.com">kabangughislain77@gmail.com</a></p>
-            <p>N°17 Av:Liberté Q:Sans-fil C/Limete</p>
-        </div>
-        <div>
-            <p> <a href="#" title="About Us">About Us</a></p>
-            <p>Jobs</p>
-            <p>Blog</p>
-            <p>Boutique</p>
-        </div>
-        <div>
-            <p class="ContactUs">Contact Us</p>
-            <p>Privacy</p>
-            <P>Team</P>
-            <p style="font-size: small;">Ghislain Kabangu Copyright © 2023</p>
+            <p style="font-size: small;">Ghislain Kabangu Copyright © 2024</p>
         </div>
         <div>
             <ul>
@@ -598,5 +276,29 @@
     </footer>
 </body>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 
 </html>
