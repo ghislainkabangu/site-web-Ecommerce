@@ -104,7 +104,7 @@ header h3 {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    background: url("../album/freestocks-_3Q3tsJ01nc-unsplash.jpg");
+    background: url("../album/vinicius-wiesehofer-UOavP_Z38lE-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -128,7 +128,6 @@ header h3 {
 
 .fond_accueil ul li a {
     text-decoration: none;
-    border: 1px solid white;
     padding: 5px;
     background-color: white;
     color: inherit;
@@ -136,22 +135,12 @@ header h3 {
 }
 
 .fond_accueil ul li a:hover {
-    background-color: white;
-    color: black;
-    border: none;
+    background:inherit;
+    color: white;
+    border: 1px solid wheat;
     transition: 0.5s;
 }
 
-.explore {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-}
-
-.about {
-    color: white;
-    transition: 0.5s;
-}
 
 /*******************************************************************************************/
 .store {
@@ -174,7 +163,7 @@ header h3 {
 
 .store ul li a {
     text-decoration: none;
-    background-color: black;
+    background-color: red;
     color: white;
     padding: 6px;
     border-radius: 15px;
@@ -182,9 +171,9 @@ header h3 {
 }
 
 .store ul li a:hover {
-    border: 2px solid black;
+    border: 1px solid red;
     background-color: white;
-    color: black;
+    color: red;
     transition: 0.5s;
 }
 
@@ -215,7 +204,22 @@ header h3 {
     flex-basis: 95%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.swiper-button-prev{
+background-color: gainsboro;
+padding: 5px;
+border-radius: 5px;
+}
+.swiper-button-prev:hover{
+    background-color: gray;
+}
+.swiper-button-next{
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+}
+.swiper-button-next:hover{
+    background-color: gray;
+}
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
@@ -374,7 +378,9 @@ footer .ContactUs {
         text-transform: lowercase;
     }
 
-
+    .swiper {
+        width: 70%;
+      }
     section article {
         flex-basis: 75%;
         border-radius: 10px;
